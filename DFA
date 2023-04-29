@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+intn,i,count=0,count1=0,a[10];
+printf(“Enter size of string:”);
+scanf(“%d”,&n);
+printf(“Enter string:”);
+for(i=0;i<n;i++)
+{
+scanf(“%d”,&a[i]);
+if(a[i]==0)
+count++;
+else
+count1++;
+
+}
+if((count%2)==0 && (count1%2)==0)
+printf(“String accepted, Because it contains even 0’s and even 1’s”);
+else if((count%2)==0 && (count1%2)!=0)
+
+printf(“String is not accepted, because it contains even 0’s and odd 1’s”);
+else if((count%2)!=0 && (count1%2)==0)
+printf(“String is not accepted, because it contains odd 0’s and even 1’s”);
+else
+printf(“String is not accepted, because it contains odd 0’s and odd 1’s”);
+getch();
+return 0;
+}
